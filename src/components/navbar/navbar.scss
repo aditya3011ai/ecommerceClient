@@ -1,0 +1,39 @@
+.NavBar {
+  background-color: var(--primary-color);
+  height: 80px;
+  z-index: 99;
+  color: white;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    .nav-left {
+      .link-group {
+          list-style: none;
+          display: flex;
+          gap: 16px;
+          .hover{
+            .link{
+                display: inline-block;
+                padding: 6px;
+            }
+          }
+      }
+    }
+    .nav-center{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        .banner{
+            color: white;
+        }
+    }
+    .nav-right{
+        
+    }
+  }
+}

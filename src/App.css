@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&display=swap');
+body{
+    font-family: 'Cabin', sans-serif;
+}
+:root{
+    --primary-color:#212121;
+    --secondary-color:#888;
+    --accent-color:#8800c7;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    color:var(--primary-color);
+}
+p{
+    color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.hover{
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hover:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.hover:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
