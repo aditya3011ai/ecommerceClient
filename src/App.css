@@ -1,40 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&display=swap');
-body{
-    font-family: 'Cabin', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&display=swap");
+body {
+  font-family: "Cabin", sans-serif;
 }
-:root{
-    --primary-color:#212121;
-    --secondary-color:#888;
-    --accent-color:#8800c7;
+:root {
+  --primary-color: #212121;
+  --secondary-color: #888;
+  --accent-color: #8800c7;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0 20px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
-    color:var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
 }
-p{
-    color: var(--secondary-color);
+p {
+  color: var(--secondary-color);
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: white;
+}
+.btn-primary {
+    padding: 12px 16px;
+    background-color: var(--accent-color);
     color: white;
-}
-.hover{
-    cursor: pointer;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    user-select: none;
 }
-.hover:hover{
-    background-color: rgba(255, 255, 255, 0.1);
+
+.btn-primary:hover {
+    background-color: #9800df;
 }
-.hover:active{
-    background-color: rgba(255, 255, 255, 0.2);
+
+.btn-primary:active {
+    background-color: #b413ff;
+}
+.hover {
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hover:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.hover:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <div className='nav-right'>
         <BsCart2 className='icon'/>
-        <span className='cart-count'>9</span>
+        <span className='cart-count center'>9</span>
       </div>
       </div>
     </div>
