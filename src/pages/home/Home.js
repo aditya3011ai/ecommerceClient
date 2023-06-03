@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../components/hero/Hero";
 import "./home.scss";
 import Category from "../../components/category/Category";
+import Product from '../../components/product/Product';
 
 const Home = () => {
   return (
@@ -28,9 +29,11 @@ const Home = () => {
           </p>
         </div>
         <div className="content">
-          <Category />
-          <Category />
-          <Category />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
+          <Product />
         </div>
       </section>
     </div>

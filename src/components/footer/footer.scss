@@ -1,0 +1,73 @@
+.Footer {
+    background-color: rgba($color: #464646, $alpha: 0.05);
+    padding-block: 20px;
+    margin-top: 80px;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-left {
+            .follow {
+                list-style: none;
+                display: flex;
+                gap: 8px;
+
+                li {
+                    font-size: 20px;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    background-color: rgb(221, 221, 221);
+                    &:hover {
+                        background-color: rgb(214, 214, 214);
+                    }
+
+                }
+            }
+        }
+
+        .footer-right {
+            .company {
+                li {
+                    margin-top: 10px;
+                    color: var(--secondary-color);
+
+                    &:hover {
+                        color: var(--accent-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .subfooter {
+        flex-direction: column;
+        margin-top: 40px;
+
+        .credit-card-img {
+            width: 200px;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer {
+        .content {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    
+}
