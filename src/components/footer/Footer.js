@@ -11,7 +11,7 @@ import creditCardImg from '../../assets/creditcardicons.png'
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <footer className="Footer">
       <div className="container ">
 
         <div className="content">
@@ -50,7 +50,7 @@ const Footer = () => {
                     </div>
                     <p>Copyright {new Date().getFullYear()} © <strong>Posterz.</strong></p>
                 </div>
-    </div>
+    </footer>
   );
 };
 

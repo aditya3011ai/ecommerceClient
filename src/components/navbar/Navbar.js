@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import {BsCart2} from 'react-icons/bs'
 const Navbar = () => {
   return (
-    <div className='NavBar'>
+    <nav className='NavBar'>
       <div className='container nav-container'>
       <div className='nav-left'>
         <ul className='link-group'>
@@ -27,7 +27,7 @@ const Navbar = () => {
         <span className='cart-count center'>9</span>
       </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
