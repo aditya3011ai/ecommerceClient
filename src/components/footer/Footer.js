@@ -35,11 +35,11 @@ const Footer = () => {
           <div className="footer-right">
             <h3 className="title">Company</h3>
             <ul className="company">
-              <li className="hover-link">Contact Us</li>
-              <li className="hover-link">Privacy Policy</li>
-              <li className="hover-link">Returns And Exchange Policy</li>
-              <li className="hover-link">Shipping Policy</li>
-              <li className="hover-link">Terms & Conditions</li>
+              <li className="hover">Contact Us</li>
+              <li className="hover">Privacy Policy</li>
+              <li className="hover">Returns And Exchange Policy</li>
+              <li className="hover">Shipping Policy</li>
+              <li className="hover">Terms & Conditions</li>
             </ul>
           </div>
         </div>

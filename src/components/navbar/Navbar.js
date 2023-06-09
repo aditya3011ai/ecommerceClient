@@ -2,8 +2,13 @@ import React from 'react'
 import './navbar.scss'
 import { Link } from 'react-router-dom'
 import {BsCart2} from 'react-icons/bs'
+import Cart from '../../components/cart/Cart'
+import { useState } from 'react';
+
 const Navbar = () => {
+  const [showCart,setShowCart] = useState(false)
   return (
+    <>
     <nav className='NavBar'>
       <div className='container nav-container'>
       <div className='nav-left'>
@@ -22,12 +27,14 @@ const Navbar = () => {
       <div className='nav-center'>
       <Link to='/'><h1 className='banner'>PosterZ.</h1></Link>
       </div>
-      <div className='nav-right'>
+      <div className='nav-right hover' onClick={()=>setShowCart(!showCart)}>
         <BsCart2 className='icon'/>
         <span className='cart-count center'>9</span>
       </div>
       </div>
     </nav>
+    {showCart && <Cart setShowCart={setShowCart}/>}
+    </>
   )
 }
 

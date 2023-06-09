@@ -1,8 +1,13 @@
 import React from "react";
 import './categories.scss'
 import Product from './../../components/product/Product';
+import {useNavigate, useParams}from 'react-router-dom'
+import { useState,useEffect } from "react";
 const Categories = () => {
 
+  const navigate = useNavigate();
+  const params = useParams();
+  const [category, setCategory] = useState('')
   const categoryList = [
     {
       id:'comics',
@@ -17,8 +22,12 @@ const Categories = () => {
       name:'Sports'
     },
   ]
+  useEffect(() => {
+    setCategory(params.id)
+  }, [params])
+  
   const updateCategory = (e)=>{
-    console.log(e.target.value);
+    navigate(`/category/${e.target.value}`);
   }
   return (
     <div className="Categories">
@@ -50,7 +59,9 @@ const Categories = () => {
               {categoryList.map((item)=>{
               return(
               <div className="filter-radio"key={item.id}>
-              <input type="radio" id={item.id} name="category" value={item.id} onChange={updateCategory} />
+              <input type="radio" id={item.id} name="category" value={item.id} onChange={updateCategory} 
+              checked={item.id === category}
+              />
               <label htmlFor={item.id}>{item.name}</label>
             </div>)
             })}
