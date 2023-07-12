@@ -1,8 +1,11 @@
 import React from "react";
 import "./productDetail.scss";
 import tempImg from "../../assets/naruto.jpeg";
+import { useParams } from "react-router-dom";
 const ProductDetail = () => {
-  return (
+  const params = useParams()
+  const productKey = params.productId
+  return (    
     <div className="ProductDetail container">
       <div className="product-layout center">
         <div className="product-img">
