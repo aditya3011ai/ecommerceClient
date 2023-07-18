@@ -15,7 +15,7 @@ const Home = () => {
       "/categories/?populate=image"
     );
     const topProductsResponse = await axiosClient.get(
-      "/products?filters[isTopPick][$eq]=true&populate=image  "
+      "/products?populate=image"
     );
     setCategories(categoryResponse.data.data);
     setTopProducts(topProductsResponse.data.data);
@@ -42,7 +42,7 @@ const Home = () => {
       </section>
       <section className="collection container">
         <div className="info">
-          <h2 className="heading">Our Top Picks</h2>
+          <h2 className="heading">All Posters</h2>
           <p className="subheading">All New Designs, Same Old Details.</p>
         </div>
         <div className="content">

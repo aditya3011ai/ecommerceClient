@@ -2,9 +2,17 @@ import React from "react";
 import "./productDetail.scss";
 import tempImg from "../../assets/naruto.jpeg";
 import { useParams } from "react-router-dom";
+import { axiosClient } from "../../utils/axiosClient";
+import { useState } from "react";
 const ProductDetail = () => {
   const params = useParams()
-  const productKey = params.productId
+  const [products, setProducts] = useState()
+  const fetchData = async()=>{
+    const productResponse = await axiosClient.get(`/products?filters[key][$eq]=${params.productId}`)
+    if(productResponse.data.data.length >0){
+    setProducts(productResponse.data.data[0])
+    }
+  }
   return (    
     <div className="ProductDetail container">
       <div className="product-layout center">
