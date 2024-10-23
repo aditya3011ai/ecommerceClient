@@ -1,4 +1,4 @@
-![](/media2.jepg)
+![](/media2.png)
 
 # Getting Started with Create React App
 
