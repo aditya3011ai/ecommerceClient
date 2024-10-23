@@ -1,5 +1,9 @@
 ![](/media2.png)
 
+#Full Project video Link- https://youtu.be/l60QUjSjqi4
+
+##full projects demo Link- https://dital-media-website.netlify.app
+(Its hosted on a free website so it may take time o full function around 1 min)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
